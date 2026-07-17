@@ -1,0 +1,71 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  notebook-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install notebook validator
+        run: python -m pip install --upgrade nbformat
+
+      - name: Validate repository documentation and notebooks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import nbformat
+
+          required = [
+              "README.md",
+              "LICENSE",
+              "LICENSE_REVIEW.md",
+              "THIRD_PARTY_NOTICES.md",
+              "PUBLIC_RELEASE_STATUS.md",
+          ]
+          failures = [
+              f"Missing required file: {name}"
+              for name in required
+              if not Path(name).is_file()
+          ]
+
+          notebooks = sorted(Path(".").rglob("*.ipynb"))
+          if not notebooks:
+              failures.append("No notebooks were found.")
+
+          for path in notebooks:
+              if ".git" in path.parts:
+                  continue
+              try:
+                  notebook = nbformat.read(path, as_version=4)
+              except Exception as exc:
+                  failures.append(f"{path}: malformed notebook: {exc}")
+                  continue
+
+              for index, cell in enumerate(notebook.cells):
+                  if cell.cell_type == "code":
+                      if cell.get("outputs"):
+                          failures.append(f"{path}: code cell {index} has saved outputs")
+                      if cell.get("execution_count") is not None:
+                          failures.append(
+                              f"{path}: code cell {index} has an execution count"
+                          )
+
+          if failures:
+              raise SystemExit("\n".join(failures))
+
+          print(f"Validated {len(notebooks)} notebooks.")
+          PY
