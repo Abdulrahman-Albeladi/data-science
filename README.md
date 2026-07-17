@@ -65,7 +65,6 @@ The supplied inventory does not identify the datasets, credentials, local paths,
 - No dataset inventory, license information, or data-use permissions are established from the supplied file list.
 - The final-project notebook's topic and conclusions are not established by its filename.
 - The classifier notebook's `copy-of` naming is preserved because it is part of the recovered provenance; it should not be treated as an independent attribution statement.
-- Notebook outputs may be stale, absent, dependent on unavailable data, or generated in an environment that cannot yet be reconstructed.
 
 ## Provenance
 
@@ -86,24 +85,16 @@ These materials were recovered from university/coursework files and organized as
 5. Execute only after dependencies and data access are documented.
 6. Add concise project-level documentation describing confirmed inputs, methods, and limitations without claiming unverified results.
 
-<!-- portfolio-public-release-license:start -->
+## Current repository layout
 
-## License and public-release status
+- `docs/` — 1 files
+- `projects/` — 3 files
 
-This repository is published under an all-rights-reserved
-portfolio license. Viewing the repository does not grant permission to reuse its code,
-documentation, datasets, or assets. Third-party and collaborator materials retain
-their original rights.
+## Public-release status
 
-Before changing visibility from private to public, the owner must complete the
-ownership checklist in `LICENSE_REVIEW.md`.
+**READY FOR FINAL MANUAL PUBLIC-RELEASE CHECK**
 
-<!-- portfolio-public-release-license:end -->
+Automated security and documentation checks pass. Complete the ownership checklist and verify build or test claims before changing visibility.
 
-<!-- release-license:start -->
-
-## License and public-release status
-
-This repository uses an all-rights-reserved portfolio license. Review `LICENSE_REVIEW.md` and `THIRD_PARTY_NOTICES.md` before changing visibility to public.
-
-<!-- release-license:end -->
+This repository uses an all-rights-reserved portfolio license. Review `LICENSE`,
+`LICENSE_REVIEW.md`, `THIRD_PARTY_NOTICES.md`, and `OWNERSHIP_REVIEW.md`.
