@@ -1,5 +1,12 @@
 # Data Science
 
+<!-- employer-visual:start -->
+<p align="center">
+  <img src="docs/portfolio-overview.png" alt="Data Science project overview" width="100%">
+</p>
+<!-- employer-visual:end -->
+
+
 Data-science notebooks covering real-estate analysis, regression, optimization, neural networks, and classification.
 
 **Technologies:** Python · Jupyter · pandas · NumPy · scikit-learn · Matplotlib
