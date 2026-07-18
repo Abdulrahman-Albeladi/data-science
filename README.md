@@ -37,6 +37,5 @@ Large or restricted source datasets are not necessarily included; notebooks docu
 
 ## License and attribution
 
-Third-party and collaborator attribution is documented in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 Use and redistribution are governed by the repository's [`LICENSE`](LICENSE).
