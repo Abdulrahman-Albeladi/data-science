@@ -6,9 +6,9 @@ This repository contains recovered, publish-eligible coursework notebooks associ
 
 | Project | Location | Description | Validation status |
 | --- | --- | --- | --- |
-| Regression, gradient descent, and neural networks | `projects/cmsc320-regressiongradientdescentneuralnetworks-119271452-albeladi/` | A notebook project whose recovered filename identifies regression, gradient descent, and neural-network topics. | Notebook presence is known from the recovered file list. Execution and output validity have not been established. |
-| CMSC 320 final notebook | `projects/320finalipynb/` | A recovered notebook identified as a CMSC 320 final-project artifact. The available filename does not establish its research question, data source, or results. | Notebook presence is known from the recovered file list. Execution and output validity have not been established. |
-| Classifiers notebook | `projects/copy-of-cmsc320-homework04-classifiers/` | A recovered classifier-focused coursework notebook. The `copy-of` filename is retained as provenance and does not establish authorship beyond the recovered artifact. | Notebook presence is known from the recovered file list. Execution and output validity have not been established. |
+| Regression, gradient descent, and neural networks | `projects/regression-gradient-descent-neural-networks/` | A notebook project whose recovered filename identifies regression, gradient descent, and neural-network topics. | Notebook presence is known from the recovered file list. Execution and output validity have not been established. |
+| CMSC 320 final notebook | `projects/saudi-real-estate-analysis/` | A recovered notebook identified as a CMSC 320 final-project artifact. The available filename does not establish its research question, data source, or results. | Notebook presence is known from the recovered file list. Execution and output validity have not been established. |
+| Classifiers notebook | `projects/classifiers/` | A recovered classifier-focused coursework notebook. The `copy-of` filename is retained as provenance and does not establish authorship beyond the recovered artifact. | Notebook presence is known from the recovered file list. Execution and output validity have not been established. |
 
 ## Repository layout
 
@@ -41,12 +41,6 @@ jupyter lab
 ```
 
 Open a notebook from its `notebooks/` directory in JupyterLab. Install additional libraries only after inspecting that notebook's imports. Dependency versions should be recorded in a project-specific environment file if execution work is later performed.
-
-## Validation status
-
-No successful test run, notebook execution, dataset availability check, or result reproduction is established by the supplied repository inventory. The notebooks should therefore be treated as recovered source artifacts rather than verified runnable projects.
-
-Safe structural checks can confirm that the notebook files remain valid JSON. Executing notebooks is a separate step that may require packages, local files, credentials, network access, or environment-specific configuration not represented in the recovered file list.
 
 ## Data and private-data requirements
 
@@ -85,16 +79,12 @@ These materials were recovered from university/coursework files and organized as
 5. Execute only after dependencies and data access are documented.
 6. Add concise project-level documentation describing confirmed inputs, methods, and limitations without claiming unverified results.
 
-## Current repository layout
+<!-- internal-projects:start -->
+## Projects
 
-- `docs/` — 1 files
-- `projects/` — 3 files
-
-## Public-release status
-
-**READY FOR FINAL MANUAL PUBLIC-RELEASE CHECK**
-
-Automated security and documentation checks pass. Complete the ownership checklist and verify build or test claims before changing visibility.
-
-This repository uses an all-rights-reserved portfolio license. Review `LICENSE`,
-`LICENSE_REVIEW.md`, `THIRD_PARTY_NOTICES.md`, and `OWNERSHIP_REVIEW.md`.
+| Project | Location |
+|---|---|
+| Saudi Real Estate Analysis | `projects/saudi-real-estate-analysis` |
+| Regression, Gradient Descent, and Neural Networks | `projects/regression-gradient-descent-neural-networks` |
+| Classifiers | `projects/classifiers` |
+<!-- internal-projects:end -->
