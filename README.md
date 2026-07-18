@@ -1,4 +1,4 @@
-# data-science-coursework
+# Data Science
 
 This repository contains recovered, publish-eligible coursework notebooks associated with CMSC 320 / data-science coursework. The repository preserves the recovered notebook artifacts and their file-level provenance. It does not claim that every notebook is currently reproducible, executable, or complete without further review.
 
