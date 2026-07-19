@@ -1,11 +1,5 @@
 # Data Science
 
-<!-- employer-visual:start -->
-<p align="center">
-  <img src="docs/portfolio-overview.png" alt="Data Science project overview" width="100%">
-</p>
-<!-- employer-visual:end -->
-
 Curated Jupyter notebooks demonstrating applied EDA/ML (Saudi real-estate), model comparison on a public dataset (wine quality), and fundamentals (regression + gradient descent with a small neural-network demo).
 
 Technologies: Python, Jupyter, pandas, NumPy, scikit-learn, Matplotlib, Seaborn, SciPy
