@@ -1,0 +1,13 @@
+# Core scientific Python stack
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+scipy
+
+# Notes:
+# - sqlite3 is part of the Python standard library and does not need installation.
+# - Optional: install 'torch' to run the (optional) PyTorch section in the
+#   regression notebook, e.g.:
+#   pip install torch
